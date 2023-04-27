@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Staatliches&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Staatliches', cursive;
+    background-color: #bca0dc;
+    color: #4e2e66;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+}
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+}
+.empty-boxes {
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    border: solid 3px #741f79;
+    background: white;
+}
+.filled-box {
+    background-image: url('https://source.unsplash.com/random/150x150');
+    height: 157px;
+    width: 157px;
+    cursor: pointer;
+}
+
+.hold {
+    border: 5px solid #e12424;
+}
+
+.hovered {
+    background-color: #333;
+    border-color: #fff;
+    border-style: dashed;
+}
+@media (max-width: 900px) {
+    h1 {
+        text-align: center;
+    }
+    .box-container {
+        flex-direction: column;
+    }
+}
